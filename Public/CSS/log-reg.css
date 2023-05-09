@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------body------------------------ */
+
+body {
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 24px;
+    width: 100%;
+}
+
+/* ------------------------header------------------------ */
+
+nav a {
+    color: black;
+}
+
+#nav-ul i {
+    margin-left: 5px;
+}
+
+header {
+    background-color: #EAC926;
+    margin: 0 auto;
+}
+
+#banner-header {
+    width: 100%;
+}
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
+}
+
+#burguermenu {
+    color: white;
+    background-color: #1259c3;
+    padding: 1%;
+    border-radius: 25%;
+    text-align: center;
+}
+
+#header-top-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+#logo-mercado-liebre {
+    width: 50%;
+    max-width: 150px;
+}
+
+#logo-mercado-liebre {
+    width: 100px;
+}
+
+header h3 {
+    font-weight: normal;
+}
+
+header ul {
+    padding-left: 0;
+}
+
+header ul a {
+    text-decoration: none;
+}
+
+#searchbar {
+    display: flex;
+    padding: 5px;
+    width: 50%;
+    background-color: white;
+    border-radius: 7px;
+    justify-content: space-between;
+}
+
+#searchbar button {
+    border: none;
+    background-color: white;
+}
+
+#searchbar input {
+    border: none;
+    outline: none;
+    width: 85%;
+    padding: 0;
+}
+
+nav {
+    display: none;
+}
+
+/* ------------------------main------------------------ */
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.group-register {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#categorias-de-interes {
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+}
+
+#checkbox-intereses {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    font-weight: normal;
+}
+
+#checkbox-intereses input { 
+    width: 10%; 
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#boton-reset-register, #boton-enviar-register {
+    width: 100%;
+    padding: 10px;
+}
+
+#boton-enviar-register {
+    background-color: #1259c3;
+    color: white;
+}
+
+#boton-reset-register {
+    background-color: lightgrey;
+    color: black;
+}
+
+#nombre-usuario-login {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#boton-enviar-login {
+    background-color: #1259c3;
+    color: white;
+}
+
+#boton-enviar-login:hover {
+    background-color: #0022AA;
+    width: 100%;
+}
+
+.group-login {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+/* ------------------------footer------------------------ */
+
+#main-footer {
+    margin-bottom: 25px;
+}
+
+.icono-footer {
+    margin: 10px;
+}
+
+#copyright {
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    background-color: #ebebeb;
+}
+
+footer .fa-solid {
+    font-size: 2em;
+    margin-top: 10px;
+    color: #1259c3;
+}
+
+@media (min-width: 769px) {
+
+    /* ------------------------header------------------------ */
+    #burguermenu {
+        display: none;
+    }
+
+    #header-top-bar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+        width: 100%;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #ul-left {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 10px
+    }
+
+    #ul-left a {
+        margin: 10px
+    }
+
+    #ul-right {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 10px
+    }
+
+    #ul-right a {
+        margin: 10px
+    }
+
+    /* ------------------------main------------------------ */
+
+    /* ------------------------footer------------------------ */
+
+    #main-footer {
+        display: flex;
+        margin-bottom: 25px;
+    }
+
+    #compra-en-cuotas {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1200px) {}
